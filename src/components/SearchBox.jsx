@@ -17,7 +17,8 @@ export default function SearchBox() {
            // alert("Please enter a city name.");
            return;
         
-        const apiKey = "c3146ccaf39daac4fca57cdd9347e236";
+        const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
+        
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
       try { 
